@@ -172,6 +172,33 @@ $(window).on("load",function (){
 
     });
 
+
+    // experience isotope
+    $('.XPgallery').isotope({
+        // options
+        itemSelector: '.XPitems'
+      });
+  
+      var $XPgallery = $('.XPgallery').isotope({
+        // options
+      });
+  
+      // filter items on button click
+      $('.XPfiltering').on( 'click', 'span', function() {
+  
+          var filterValue = $(this).attr('data-filter');
+  
+          $XPgallery.isotope({ filter: filterValue });
+  
+      });
+  
+      $('.XPfiltering').on( 'click', 'span', function() {
+  
+          $(this).addClass('active').siblings().removeClass('active');
+  
+      });
+
+
     //Activate WOW JS
     new WOW().init();
 

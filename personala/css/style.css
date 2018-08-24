@@ -732,6 +732,150 @@ span, a, a:hover {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
+
+/* ----------------------------------------------------------------
+				09 Experience XP
+-----------------------------------------------------------------*/
+.experience .item {
+  text-align: center;
+  padding: 40px 15px;
+}
+.experience .item .icon {
+  font-size: 40px;
+  color: #C49B66;
+  margin-bottom: 30px;
+}
+.experience .item h6 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.experience .active {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  position: relative;
+}
+.experience .active.bolt:before, .services .active.bolt:after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  bottom: -15px;
+  z-index: 4;
+}
+.experience .active.bolt:before {
+  left: -15px;
+}
+.experience .active.bolt:after {
+  right: -15px;
+}
+.experience .bord {
+  border-bottom: 1px solid #eee;
+}
+
+.experience .XPfiltering span {
+  padding: 8px 20px;
+  margin: 0 5px;
+  color: #777;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+.experience .XPfiltering .active {
+  color: #fff;
+  background: #C49B66;
+  border-color: #C49B66;
+}
+.experience .XPfiltering .active:after {
+  bottom: 0;
+  top: calc(100% - 1px);
+  opacity: 1;
+}
+.experience .XPfiltering .active:before {
+  top: 0;
+  opacity: 1;
+}
+/* .experience .items {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.experience .item {
+  position: relative;
+  overflow: hidden;
+}
+.experience .item h5 {
+  font-size: 18px;
+  position: relative;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  opacity: 0;
+  z-index: 5;
+}
+.experience .item h6 {
+  color: #C49B66;
+  font-size: 13px;
+  position: relative;
+  margin-bottom: 10px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  opacity: 0;
+  z-index: 5;
+}
+.experience .item .link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #C49B66;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 5;
+  opacity: 0;
+}
+.experience .item-overlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: transparent;
+  z-index: 2;
+}
+.experience .item-overlay:before, .portfolio .item-overlay:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background: #fff;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+.experience .item-overlay:before {
+  left: 0;
+  top: 0;
+}
+.experience .item-overlay:after {
+  right: 0;
+  bottom: 0;
+}
+.experience .item-overlay:hover:before, .portfolio .item-overlay:hover:after {
+  width: 100%;
+}
+.experience .item-overlay:hover h6, .portfolio .item-overlay:hover h5, .portfolio .item-overlay:hover .link {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+} */
+
+
 /* ----------------------------------------------------------------
 				07 Services
 -----------------------------------------------------------------*/
@@ -1247,5 +1391,19 @@ span, a, a:hover {
 .section-title h2:before {
     background: #2196f3;
 }
+
+
+
+
+#myGameCanvas
+{
+  display: block;
+  margin: 0 auto;
+
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */
