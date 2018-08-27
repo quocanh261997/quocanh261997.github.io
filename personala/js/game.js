@@ -145,11 +145,11 @@ var app = {
     },
   
     draw : function(){
-      app.context.fillStyle = "rgb(200, 0, 0)";
+      app.context.fillStyle = "#C49B66";
       app.context.fillRect(this.position.x, this.position.y, this.size.width, this.size.height);
   
       app.context.textAlign = "center";
-      app.context.fillStyle = "rgba(0, 0, 0, .2)";
+      app.context.fillStyle = "#C49B66";
   
       app.context.font = "18px sans-serif";
       app.context.fillText("Lives", 40, 20);
@@ -191,7 +191,7 @@ var app = {
     },
   
     physics: {
-      speed: 5
+      speed: 3
     },
   
     direction: {
@@ -200,7 +200,7 @@ var app = {
     },	
   
     draw : function(){
-      app.context.fillStyle = "rgb(200, 0, 0)";
+      app.context.fillStyle = "#C49B66";
       app.context.fillRect(this.position.x, this.position.y, this.size.width, this.size.height);
     },
   
@@ -335,13 +335,13 @@ var app = {
   
     switch (this.health) {
       case 3:
-        app.context.fillStyle = "rgb(0, 200, 0)"; //Green
+        app.context.fillStyle = "#d5b993"; //Green
         break;
       case 2:
-        app.context.fillStyle = "rgb(200, 200, 0)"; //Orange?
+        app.context.fillStyle = "#C49B66"; //Orange?
         break;
       case 1:
-        app.context.fillStyle = "rgb(200, 0, 0)"; //Red
+        app.context.fillStyle = "#9c7c51"; //Red
         break;
     }
   

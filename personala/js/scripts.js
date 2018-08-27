@@ -122,6 +122,16 @@ $(function() {
         }
     });
 
+   
+      // magnificPopup
+    //   $('.XPgallery').magnificPopup({
+    //     delegate: '.link',
+    //     type: 'image',
+    //     XPgallery: {
+    //         enabled: true
+    //     }
+    // });
+
 
     // countUp
     $('.numbers .count').countUp({
@@ -180,24 +190,23 @@ $(window).on("load",function (){
       });
   
       var $XPgallery = $('.XPgallery').isotope({
-        // options
+        filter: '.cs'
       });
   
+      
       // filter items on button click
       $('.XPfiltering').on( 'click', 'span', function() {
   
           var filterValue = $(this).attr('data-filter');
   
           $XPgallery.isotope({ filter: filterValue });
-  
       });
   
       $('.XPfiltering').on( 'click', 'span', function() {
   
-          $(this).addClass('active').siblings().removeClass('active');
+          $(this).addClass('XPactive').siblings().removeClass('XPactive');
   
       });
-
 
     //Activate WOW JS
     new WOW().init();
