@@ -451,7 +451,7 @@ span, a, a:hover {
 
 .logo {
   padding: 15px 0;
-  width: 90px;
+  width: 150px;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
@@ -1111,6 +1111,7 @@ span, a, a:hover {
 .testimonials {
   background-attachment: fixed;
 }
+
 .testimonials .icon {
   font-size: 40px;
   margin-bottom: 15px;
@@ -1126,6 +1127,18 @@ span, a, a:hover {
   padding-right: 10px;
   margin-right: 10px;
   position: relative;
+}
+
+.testimonials .citem img {
+  width: 48%;
+  height: 48%;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+
+.testimonials .citem img:active{
+  -webkit-transform: scale(2);
+  transform: scale(2);
 }
 .testimonials .citem h5:after {
   content: "|";

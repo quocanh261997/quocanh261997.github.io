@@ -182,7 +182,6 @@ $(window).on("load",function (){
 
     });
 
-
     // experience isotope
     $('.XPgallery').isotope({
         // options
@@ -190,7 +189,7 @@ $(window).on("load",function (){
       });
   
       var $XPgallery = $('.XPgallery').isotope({
-        filter: '.cs'
+        filter: '.hack'
       });
   
       
