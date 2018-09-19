@@ -551,11 +551,11 @@ span, a, a:hover {
   font-weight: 700;
 }
 .hero .content .social-icon span {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
-  font-size: 12px;
+  font-size: 25px;
   border: 1px solid #eee;
   margin: 15px 5px 15px 0;
   cursor: pointer;
